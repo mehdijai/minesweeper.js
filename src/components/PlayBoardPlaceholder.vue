@@ -9,9 +9,9 @@ defineProps<{
 
 <template>
   <div class="board" @contextmenu.prevent>
-    <template v-for="x in height" :key="'y' + x">
+    <template v-for="_ in height" :key="'y'">
       <div class="row">
-        <template v-for="y in width" :key="'x' + y">
+        <template v-for="_ in width" :key="'x'">
           <div :class="cn('cell')" @contextmenu.prevent></div>
         </template>
       </div>
