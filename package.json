@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.4.1",
     "clsx": "^2.1.1",
     "mitt": "^3.0.1",
     "pinia": "^2.3.0",
