@@ -4,7 +4,7 @@ Minesweeper.JS game using TypeScript OOP and VueJS interactivity and Pinia State
 
 ## Demo
 
-[https://minesweeper-js-one.vercel.app](Demo)
+[Demo](https://minesweeper-js-one.vercel.app)
 
 ## Core
 
