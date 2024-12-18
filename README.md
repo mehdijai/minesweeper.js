@@ -2,6 +2,10 @@
 
 Minesweeper.JS game using TypeScript OOP and VueJS interactivity and Pinia State Management. The project is still in progress, there is still things to optimize and refactor.
 
+## Demo
+
+[https://minesweeper-js-one.vercel.app](Demo)
+
 ## Core
 
 the core directory holds the classes for the core logic of Game Board interactions, Game Session handlers and Game mode settings.
