@@ -1,6 +1,6 @@
 import { IBoardSize } from "./gameBoard";
 
-export type TGameMode = "beginner" | "intermediate" | "expert";
+export type TGameMode = "starter" | "beginner" | "intermediate" | "expert";
 
 export interface GameMode {
   size: IBoardSize;
@@ -8,6 +8,11 @@ export interface GameMode {
   difficultyMultiplier: number;
 }
 export const GameModes: Record<TGameMode, GameMode> = {
+  starter: {
+    size: { height: 5, width: 10 },
+    mineRate: 0.1,
+    difficultyMultiplier: 1,
+  },
   beginner: {
     size: { height: 9, width: 9 },
     mineRate: 0.1,

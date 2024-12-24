@@ -8,7 +8,12 @@ const emits = defineEmits<{
 }>();
 
 const selectedMode = ref<TGameMode>("beginner");
-const modes = reactive(["beginner", "intermediate", "expert"]);
+const modes = reactive<TGameMode[]>([
+  "starter",
+  "beginner",
+  "intermediate",
+  "expert",
+]);
 
 const GameMode = computed(() => GameModes[selectedMode.value]);
 
