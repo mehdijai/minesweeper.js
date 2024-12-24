@@ -172,14 +172,13 @@ export class MinesweeperBoard extends BaseEventClass {
     const cell = this.getCell(index);
     if (cell) {
       cell.isFlagged = !cell.isFlagged;
-      return cell.isFlagged;
     }
 
     if (this.hasFinished()) {
       this.gameOver(true);
     }
 
-    return false;
+    return cell?.isFlagged ?? false;
   }
   getFlagsCount(): number {
     return this._board.rows.reduce((acc, row) => {
